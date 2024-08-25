@@ -5,6 +5,8 @@ namespace App\Http\Controllers;
 use Illuminate\Http\Request;
 use App\Models\Task; // Asegúrate de importar el modelo de Task
 use Illuminate\Support\Facades\Validator;
+use App\Mail\HighPriorityTaskNotification;
+use Illuminate\Support\Facades\Mail;
 
 class TaskController extends Controller
 {
@@ -45,6 +47,14 @@ class TaskController extends Controller
 
         // Crear una nueva tarea
         $task = auth()->user()->tasks()->create($validator->validated());
+        try {
+            if ($task->priority === 'alta') {
+                Mail::to($task->user->email)->send(new HighPriorityTaskNotification($task));
+            }
+        } catch (\Throwable $th) {
+            return response()->json($th, 422);
+        }
+        
 
         return response()->json($task, 201);
     }
@@ -84,6 +94,14 @@ class TaskController extends Controller
         }
 
         $task->update($validator->validated());
+
+        try {
+            if ($task->priority === 'alta') {
+                Mail::to($task->user->email)->send(new HighPriorityTaskNotification($task));
+            }
+        } catch (\Throwable $th) {
+            return response()->json($th, 422);
+        }
 
         return response()->json($task);
     }
