@@ -65,19 +65,13 @@ Bienvenido. Esta es la prueba técnica para validar mis conocimientos y fortalez
       DB_PASSWORD=tu_contraseña
       ```
 
-8. **Ejecutar migraciones y seeders**:
-    - Para crear las tablas en la base de datos y poblarlas con datos iniciales, ejecuta:
-      ```bash
-      php artisan migrate --seed
-      ```
-
-9. **Generar el JWT Secret**:
+8. **Generar el JWT Secret**:
     - Genera el secreto JWT necesario para la autenticación:
       ```bash
       php artisan jwt:secret
       ```
-
-10. **Levantar el servidor**:
+      
+9. **Levantar el servidor**:
     - Inicia el servidor de desarrollo de Laravel con:
       ```bash
       php artisan serve
@@ -93,7 +87,7 @@ Bienvenido. Esta es la prueba técnica para validar mis conocimientos y fortalez
 * Git
 * GitHub
 
-## Columnas de la tabla:
+## tablas:
 * id
 * name
 * description
@@ -107,3 +101,9 @@ Si deseas probar la API en Postman, sigue estos pasos:
 3. Utiliza la URL base `http://127.0.0.1:8000/api` para todas las solicitudes API.
 4. Realiza una solicitud POST a `/auth/login` con las credenciales de un usuario registrado para obtener el token JWT.
 5. Incluye el token en las solicitudes posteriores usando el encabezado `Authorization: Bearer <tu_token_jwt>` para acceder a las rutas protegidas.
+
+## Colección de Postman
+
+Puedes utilizar la siguiente colección de Postman para validar la documentación de la API del proyecto, así como para interactuar con los endpoints utilizados.
+
+<a href="https://documenter.getpostman.com/view/28758682/2sAXjF9v2e" target="_blank">Ver Documentación API</a>
