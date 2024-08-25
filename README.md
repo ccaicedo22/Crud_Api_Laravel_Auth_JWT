@@ -1,5 +1,6 @@
 
-#  <img src="https://w7.pngwing.com/pngs/399/620/png-transparent-laravel-hd-logo.png" alt="Node.js Logo" width="200"/> Meico Solar - API 
+# <img src="https://w7.pngwing.com/pngs/399/620/png-transparent-laravel-hd-logo.png" alt="Laravel Logo" width="200" height="100"/> Meico Solar - API
+
 ## Carlos Andres Balaguera Caicedo - API- LARAVEL-JWT
 
 ## Prueba realizada del 25/08/2024 al 25/08/2024
