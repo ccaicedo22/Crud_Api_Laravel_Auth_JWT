@@ -36,9 +36,15 @@ return [
     */
 
     'guards' => [
-        'api' => [
-            'driver' => 'jwt',
+        'web' => [
+            'driver' => 'session',
             'provider' => 'users',
+        ],
+
+        'api' => [
+            'driver' => 'jwt', // Usa el driver 'jwt' para autenticación de API
+            'provider' => 'users',
+            'hash' => false,
         ],
     ],
 
