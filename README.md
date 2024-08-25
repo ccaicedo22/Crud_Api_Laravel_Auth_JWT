@@ -1,5 +1,5 @@
 
-# Meico Solar - API 
+#  <img src="https://w7.pngwing.com/pngs/399/620/png-transparent-laravel-hd-logo.png" alt="Node.js Logo" width="200"/> Meico Solar - API 
 ## Carlos Andres Balaguera Caicedo - API- LARAVEL-JWT
 
 ## Prueba realizada del 25/08/2024 al 25/08/2024
@@ -87,12 +87,12 @@ Bienvenido. Esta es la prueba técnica para validar mis conocimientos y fortalez
 * Git
 * GitHub
 
-## tablas:
-* id
-* name
-* description
-* price
-* stock
+## Diagrama de la Base de Datos
+
+A continuación se muestra el diagrama de la base de datos que ilustra la estructura y relaciones entre las tablas de la aplicación:
+
+![Diagrama de la Base de Datos](https://github.com/ccaicedo22/Crud_Api_Laravel_Auth_JWT/blob/main/public/images/Diagrama%20base%20de%20datos.png)
+
 
 ## ¿DESEAS PROBAR LA API EN POSTMAN?
 Si deseas probar la API en Postman, sigue estos pasos:
